@@ -1,0 +1,854 @@
+{
+    "about_interest": "I'm currently interested in learning the SvelteKit framework and associated TypeScript web stack.",
+    "about_text": "Hi, my name is Lachlan, I have a bachelor's degree in Computer Science and am an avid lover of technology. In my current position, I work primarily with an interesting technology stack comprised of a C# / WPF / Prism front end, a server deployed R backend, and T-SQL databases. I'm currently really interested in doing full stack web development, so I've been using some of my free time to get better at it. When I'm not working, I enjoy tabletop and online gaming with friends, as well as mixing drum and bass music.",
+
+    "experiences": [
+        {
+            "id": 0,
+            "start_date": "Jun 2024",
+            "end_date": "",
+            "company": "Abbott Point of Care",
+            "position": "Intermediate Engineer",
+            "current": true,
+            "about": "I am currently the sole developer working on several data driven applications for use in product engineering, QA, and product integration. The software I work on dispositions product, helps diagnose issues, and generates various customer facing and internal reports. The main software system I work on uses a C# / WPF / Prism front end, a mini-CRAN R backend, and interfaces with several production databases. I also help automate and optimize manual processes within the product engineering department. In addition, I also still maintain applications I've worked on in my previous role.",
+            "duties": [
+                {
+                    "title": "Desktop Software",
+                    "time_slice": 25,
+                    "color": "#AACDFF80"
+                },
+                {
+                    "title": "Front End Development",
+                    "time_slice": 15,
+                    "color": "#FEBAFF80"
+                },
+                {
+                    "title": "Back End Development",
+                    "time_slice": 15,
+                    "color": "#5c7fad"
+                },
+                {
+                    "title": "Databasing",
+                    "time_slice": 20,
+                    "color": "#8f4c7d"
+                },
+                {
+                    "title": "Documentation",
+                    "time_slice": 10,
+                    "color": "#9e6aff80"
+                },
+                {
+                    "title": "Process Optimization",
+                    "time_slice": 10,
+                    "color": "#D2AAFF80"
+                },
+                {
+                    "title": "Misc",
+                    "time_slice": 5,
+                    "color": "#AEAAFF80"
+                }                
+            ],
+            "technologies": [
+                {
+                    "lang": "R (various packages)",
+                    "percent": 30,
+                    "color": "#AACDFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "C# / WPF / Prism",
+                    "percent": 25,
+                    "color": "#FEBAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "T-SQL (MSSQL)",
+                    "percent": 25,
+                    "color": "#9e6aff80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Embedded C/C++",
+                    "percent": 10,
+                    "color": "#D2AAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "SAS JMP Script",
+                    "percent": 5,
+                    "color": "#AEAAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Other (Python, Javascript, LaTeX)",
+                    "percent": 5,
+                    "color": "#FFB8DC80",
+                    "hovered": false
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "start_date": "Aug 2021",
+            "end_date": "May 2024",
+            "company": "Abbott Point of Care",
+            "position": "Associate Scientist",
+            "current": false,
+            "about": "I worked on a small team of developers in research and development, writing code for production and internal R&D software. Working primarily using C#, WPF, and .NET, T-SQL, C++, and C.",
+            "duties": [
+                {
+                    "title": "Misc",
+                    "time_slice": 5,
+                    "color": "#AACDFF80"
+                },
+                {
+                    "title": "Desktop Software",
+                    "time_slice": 60,
+                    "color": "#FEBAFF80"
+                },
+                {
+                    "title": "Documentation",
+                    "time_slice": 10,
+                    "color": "#9e6aff80"
+                },
+                {
+                    "title": "Embedded Software",
+                    "time_slice": 10,
+                    "color": "#D2AAFF80"
+                },
+                {
+                    "title": "Engineering Troubleshooting",
+                    "time_slice": 15,
+                    "color": "#AEAAFF80"
+                }                
+            ],
+            "technologies": [
+                {
+                    "lang": "R / R-Shiny",
+                    "percent": 10,
+                    "color": "#AACDFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "C# .NET Framework (Win Forms)",
+                    "percent": 30,
+                    "color": "#FEBAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "C# .NET Framework (WPF)",
+                    "percent": 25,
+                    "color": "#9e6aff80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Embedded C/C++",
+                    "percent": 10,
+                    "color": "#D2AAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "T-SQL (MSSQL)",
+                    "percent": 20,
+                    "color": "#AEAAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Other (Python, Javascript, SAS JMP Script, LaTeX)",
+                    "percent": 5,
+                    "color": "#FFB8DC80",
+                    "hovered": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "start_date": "Sept 2018",
+            "end_date": "June 2020",
+            "company": "Carleton University",
+            "position": "Teaching Assistant",
+            "current": false,
+            "about": "I was a contractor for COMP 2406 (Web Development). and COMP 2501 (Game Design & Development).",
+            "duties": [
+                {
+                    "title": "Marking Assignments",
+                    "time_slice": 20,
+                    "color": "#AACDFF80"
+                },
+                {
+                    "title": "Holding Office Hours",
+                    "time_slice": 30,
+                    "color": "#FEBAFF80"
+                },
+                {
+                    "title": "Hosting Tutorial Sessions",
+                    "time_slice": 30,
+                    "color": "#9e6aff80"
+                },
+                {
+                    "title": "Creating Code Demos",
+                    "time_slice": 15,
+                    "color": "#D2AAFF80"
+                },
+                {
+                    "title": "Proctoring Exams",
+                    "time_slice": 5,
+                    "color": "#AEAAFF80"
+                }                
+            ],
+            "technologies": [
+                {
+                    "lang": "LaTeX",
+                    "percent": 5,
+                    "color": "#AACDFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Python (Pygame, numpy, pandas)",
+                    "percent": 25,
+                    "color": "#FEBAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Javascript (jQuery, Express.js, Node.js)",
+                    "percent": 20,
+                    "color": "#9e6aff80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Java",
+                    "percent": 20,
+                    "color": "#D2AAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "C",
+                    "percent": 15,
+                    "color": "#AEAAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "C++",
+                    "percent": 15,
+                    "color": "#FFB8DC80",
+                    "hovered": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "start_date": "May 2018",
+            "end_date": "Aug 2018",
+            "company": "Elemental Data Collection",
+            "position": "Market Research Interviewer",
+            "current": false,
+            "about": "I worked in of a team of Market Research Interviewers. I conducted regular interviews in the US and Canada on a variety of topics.",
+            "duties": [
+                {
+                    "title": "Conducting Interviews",
+                    "time_slice": 80,
+                    "color": "#AACDFF80"
+                },
+                {
+                    "title": "Misc",
+                    "time_slice": 5,
+                    "color": "#FEBAFF80"
+                },           
+                {
+                    "title": "Tabulating Responses",
+                    "time_slice": 15,
+                    "color": "#9e6aff80"
+                }             
+            ],
+            "technologies": [
+                {
+                    "lang": "N/A",
+                    "percent": 100,
+                    "color": "#AACDFF80",
+                    "hovered": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "start_date": "Sept 2016",
+            "end_date": "June 2018",
+            "company": "Carleton University",
+            "position": "Teaching Assistant",
+            "current": false,
+            "about": "I was on contract for 6 consecutive semesters for COMP 1005/1405 (Intro to Computer Science) and COMP 2401 (Intro to Systems Programming).",
+            "duties": [
+                {
+                    "title": "Marking Assignments",
+                    "time_slice": 25,
+                    "color": "#AACDFF80"
+                },
+                {
+                    "title": "Holding Office Hours",
+                    "time_slice": 35,
+                    "color": "#FEBAFF80"
+                },
+                {
+                    "title": "Hosting Tutorial Sessions",
+                    "time_slice": 30,
+                    "color": "#9e6aff80"
+                },
+                {
+                    "title": "Proctoring Exams",
+                    "time_slice": 10,
+                    "color": "#AEAAFF80"
+                }                
+            ],
+            "technologies": [
+                {
+                    "lang": "LaTeX",
+                    "percent": 15,
+                    "color": "#AACDFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Python (Pygame, numpy)",
+                    "percent": 50,
+                    "color": "#FEBAFF80",
+                    "hovered": false
+                },
+                {
+                    "lang": "Java",
+                    "percent": 35,
+                    "color": "#D2AAFF80",
+                    "hovered": false
+                }
+            ]
+        }
+    ],
+
+    "languages": [
+        {
+            "id": 0,
+            "name": "Javascript",
+            "proficiency": 65,
+            "expand": false,
+            "image_path": "../langs/js.png",
+            "about": "I started programming in Javascript back in my highschool days, using primarily vanilla JS/JQuery, PHP, and HTML/CSS, no frameworks just good ol' JS. I'd say I'm fairly comfortable with this stack. I've since tried my hand at several frameworks and am currently in love with Svelte, but I mainly write it using typescript.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "Node.js",
+                    "expand": false,
+                    "image_path": "../frameworks/node_js.png",
+                    "about": "TEST", 
+                    "url": "https://nodejs.org/en"
+                },
+                {
+                    "id": 1,
+                    "name": "Express.js",
+                    "expand": false,
+                    "image_path": "../frameworks/express.png",
+                    "about": "TEST", 
+                    "url": "https://expressjs.com"
+                },
+                {
+                    "id": 2,
+                    "name": "jQuery",
+                    "expand": false,
+                    "image_path": "../frameworks/j_query.png",
+                    "about": "TEST", 
+                    "url": "https://jquery.com"
+                },
+                {
+                    "id": 3,
+                    "name": "Svelte",
+                    "expand": false,
+                    "image_path": "../frameworks/svelte.png",
+                    "about": "TEST", 
+                    "url": "https://svelte.dev"
+                },
+                {
+                    "id": 4,
+                    "name": "React",
+                    "expand": false,
+                    "image_path": "../frameworks/react.png",
+                    "about": "TEST", 
+                    "url": "https://react.dev"
+                },
+                {
+                    "id": 5,
+                    "name": "Vite",
+                    "expand": false,
+                    "image_path": "../frameworks/vite.png",
+                    "about": "TEST", 
+                    "url": "https://vitejs.dev"
+                },
+                {
+                    "id": 6,
+                    "name": "Vercel",
+                    "expand": false,
+                    "image_path": "../frameworks/vercel.png",
+                    "about": "TEST", 
+                    "url": "https://vercel.com"
+                },
+                {
+                    "id": 7,
+                    "name": "Three.js",
+                    "expand": false,
+                    "image_path": "../frameworks/three_js.png",
+                    "about": "TEST", 
+                    "url": "https://threejs.org"
+                },
+                {
+                    "id": 8,
+                    "name": "ES Lint",
+                    "expand": false,
+                    "image_path": "../frameworks/es_lint.png",
+                    "about": "TEST", 
+                    "url": "https://eslint.org"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "TypeScript",
+            "proficiency": 75,
+            "expand": false,
+            "image_path": "../langs/ts.png",
+            "about": "You're looking at my proficiency with this language! I've recently been brought into the 21st century with Typescript. It's a fantastic way to make Javascript scaleable and it's a pleasure to use. Over the past couple of months I've gotten quite good at using it.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "Svelte",
+                    "expand": false,
+                    "image_path": "../frameworks/svelte.png",
+                    "about": "TEST", "url": "https://svelte.dev"
+                },
+                {
+                    "id": 1,
+                    "name": "React",
+                    "expand": false,
+                    "image_path": "../frameworks/react.png",
+                    "about": "TEST", "url": "https://react.dev"
+                },
+                {
+                    "id": 2,
+                    "name": "Vite",
+                    "expand": false,
+                    "image_path": "../frameworks/vite.png",
+                    "about": "TEST", "url": "https://vitejs.dev"
+                },
+                {
+                    "id": 3,
+                    "name": "Vercel",
+                    "expand": false,
+                    "image_path": "../frameworks/vercel.png",
+                    "about": "TEST", "url": "https://vercel.com"
+                },
+                {
+                    "id": 4,
+                    "name": "Three.js",
+                    "expand": false,
+                    "image_path": "../frameworks/three_js.png",
+                    "about": "TEST", "url": "https://threejs.org"
+                },
+                {
+                    "id": 5,
+                    "name": "ES Lint",
+                    "expand": false,
+                    "image_path": "../frameworks/es_lint.png",
+                    "about": "TEST", "url": "https://eslint.org"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "proficiency": 80,
+            "expand": false,
+            "image_path": "../langs/css3.png",
+            "about": "80% of my time developing web apps is spent playing around with the CSS, moreso now that I've picked up tailwind, which streamlines the whole process and makes things much nicer to do. Love me some good styles and good formatting.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "Tailwind",
+                    "expand": false,
+                    "image_path": "../frameworks/tailwind.png",
+                    "about": "TEST", 
+                    "url": "https://tailwindcss.com"
+                },
+                {
+                    "id": 1,
+                    "name": "Sass",
+                    "expand": false,
+                    "image_path": "../frameworks/sass.png",
+                    "about": "TEST", 
+                    "url": "https://sass-lang.com"
+                },
+                {
+                    "id": 3,
+                    "name": "Postcss",
+                    "expand": false,
+                    "image_path": "../frameworks/postcss.png",
+                    "about": "TEST", 
+                    "url": "https://postcss.org"
+                },
+                {
+                    "id": 4,
+                    "name": "Bootstrap",
+                    "expand": false,
+                    "image_path": "../frameworks/bootstrap.png",
+                    "about": "TEST", 
+                    "url": "https://getbootstrap.com"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "HTML",
+            "proficiency": 70,
+            "expand": false,
+            "image_path": "../langs/html5.png",
+            "about": "80% of my time developing web apps is spent playing around with the CSS, moreso now that I've picked up tailwind, which streamlines the whole process and makes things much nicer to do. Love me some good styles and good formatting.",
+            "frameworks": []
+        },
+        {
+            "id": 4,
+            "name": "SQL",
+            "proficiency": 90,
+            "expand": false,
+            "image_path": "../langs/sql.png",
+            "about": "I am much more proficient with SQL (specifically Transact SQL) than I was a couple years ago. I've had great mentorship on how to write maintainable, production ready queries, views, and stored procedures. I have had the pleasure of helping architect several databases from the ground up, and it has given me a lot of confidence with the language and databasing as a whole.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "T-SQL",
+                    "expand": false,
+                    "image_path": "../frameworks/t_sql.png",
+                    "about": "TEST", "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver16"
+                },
+                {
+                    "id": 1,
+                    "name": "Azure SQL",
+                    "expand": false,
+                    "image_path": "../frameworks/azure_sql.png",
+                    "about": "TEST", 
+                    "url": "https://azure.microsoft.com/en-ca/products/azure-sql/"
+                }
+            ]
+        },   
+        {
+            "id": 5,
+            "name": "C#",
+            "proficiency": 100,
+            "expand": false,
+            "image_path": "../langs/c_sharp.png",
+            "about": "C# is probably the language I'm most proficient with currently, I use it for my current job pretty much every day. It's a great language to write robust, scaleable, and maintainable codebases so it's my go-to for anything that needs to be done well, especicially if I don't care too much about memory management.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": ".NET Framework",
+                    "expand": false,
+                    "image_path": "../frameworks/net_framework.png",
+                    "about": "TEST", 
+                    "url": "https://dotnet.microsoft.com/en-us/download/dotnet-framework"
+                },
+                {
+                    "id": 1,
+                    "name": ".NET Core",
+                    "expand": false,
+                    "image_path": "../frameworks/net_core.png",
+                    "about": "TEST", 
+                    "url": "https://dotnet.microsoft.com/en-us/download"
+                },
+                {
+                    "id": 2,
+                    "name": "WPF",
+                    "expand": false,
+                    "image_path": "../frameworks/wpf.png",
+                    "about": "TEST", 
+                    "url": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+                },
+                {
+                    "id": 3,
+                    "name": "Infragistics",
+                    "expand": false,
+                    "image_path": "../frameworks/infragistics.png",
+                    "about": "TEST", 
+                    "url": "https://www.infragistics.com"
+                },
+                {
+                    "id": 4,
+                    "name": "Sci-Chart",
+                    "expand": false,
+                    "image_path": "../frameworks/sci_chart.png",
+                    "about": "TEST", 
+                    "url": "https://www.scichart.com"
+                },
+                {
+                    "id": 5,
+                    "name": "Prism",
+                    "expand": false,
+                    "image_path": "../frameworks/prism.png",
+                    "about": "TEST", "url": "https://prismlibrary.com"
+                }, 
+                {
+                    "id": 6,
+                    "name": "Telerik",
+                    "expand": false,
+                    "image_path": "../frameworks/telerik.png",
+                    "about": "TEST", "url": "https://www.telerik.com"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "C++",
+            "proficiency": 75,
+            "expand": false,
+            "image_path": "../langs/c++.png",
+            "about": "Probably one of the most powerfull languages I've used, especially if you do any OpenGL programming (which I have in the past). I haven't used it too much recently but I know if I ever need to again, I'll be proficient in it.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "QT",
+                    "expand": false,
+                    "image_path": "../frameworks/qt.png",
+                    "about": "TEST", 
+                    "url": "https://www.qt.io/product/framework"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "C",
+            "proficiency": 75,
+            "expand": false,
+            "image_path": "../langs/c.png",
+            "about": "C was the first real programming language I learned, and I've had to use it a fair amount for my previous position programming embeded software. In my current position I don't get to program in C much, but I still have to look at C codebases quite a bit. It will always have a soft spot in my heart.",
+            "frameworks": []
+        }, 
+        {
+            "id": 8,
+            "name": "Python",
+            "proficiency": 73,
+            "expand": false,
+            "image_path": "../langs/python.png",
+            "about": "Python is my go-to language whenever I want to script something out quickly with not much planning / boilerplate overhead. That and machine learning, who could have guessed. I'm an decently proficient with Python and it's various essential API's.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "Numpy",
+                    "expand": false,
+                    "image_path": "../frameworks/numpy.png",
+                    "about": "TEST", 
+                    "url": "https://numpy.org"
+                },
+                {
+                    "id": 1,
+                    "name": "Tensorflow",
+                    "expand": false,
+                    "image_path": "../frameworks/tensorflow.png",
+                    "about": "TEST", "url": "https://www.tensorflow.org"
+                },
+                {
+                    "id": 2,
+                    "name": "Pandas",
+                    "expand": false,
+                    "image_path": "../frameworks/pandas.png",
+                    "about": "TEST", 
+                    "url": "https://pandas.pydata.org"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "R",
+            "proficiency": 85,
+            "expand": false,
+            "image_path": "../langs/r.png",
+            "about": "I began using R for my previous job and then fell in love with R shiny. Currently I mainly use R as the backend of one of the data driven applications I work on. It's a powerful tool for data manipulation and analysis, it also has great tools for report generation.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "Shiny",
+                    "expand": false,
+                    "image_path": "../frameworks/shiny.png",
+                    "about": "TEST", 
+                    "url": "https://www.rstudio.com/products/shiny/"
+                },
+                {
+                    "id": 1,
+                    "name": "Plotly",
+                    "expand": false,
+                    "image_path": "../frameworks/plotly.png",
+                    "about": "TEST", 
+                    "url": "https://plotly.com"
+                },
+                {
+                    "id": 2,
+                    "name": "ggplot2",
+                    "expand": false,
+                    "image_path": "../frameworks/ggplot2.png",
+                    "about": "TEST", 
+                    "url": "https://ggplot2.tidyverse.org"
+                },
+                {
+                    "id": 2,
+                    "name": "dplyr",
+                    "expand": false,
+                    "image_path": "../frameworks/dplyr.png",
+                    "about": "TEST", 
+                    "url": "https://dplyr.tidyverse.org"
+                },
+                {
+                    "id": 2,
+                    "name": "officer",
+                    "expand": false,
+                    "image_path": "../frameworks/officer.png",
+                    "about": "TEST", 
+                    "url": "https://davidgohel.github.io/officer/"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Java",
+            "proficiency": 70,
+            "expand": false,
+            "image_path": "../langs/java.png",
+            "about" : "I'd much prefer to use C# if I'm going to be using a strongly-typed, garbage-collected language as I think it does a lot of what Java can do but better. However, I still have to write some good ol' Java every once in a while and I'd say I'm reasonably decent with it and that my C# knowledge translates fairly well if I ever need to pick it up in earnest.",
+            "frameworks" : [
+                {
+                    "id": 0,
+                    "name": "Spring",
+                    "expand": false,
+                    "image_path": "../frameworks/spring.png",
+                    "about": "TEST", 
+                    "url": "https://spring.io"
+                },
+                {
+                    "id": 1,
+                    "name": "Android Studio",
+                    "expand": false,
+                    "image_path": "../frameworks/android_studio.png",
+                    "about": "TEST", 
+                    "url": "https://developer.android.com/studio"
+                }
+            ]
+        }, 
+        {
+            "id": 11,
+            "name": "PHP",
+            "proficiency": 40,
+            "expand": false,
+            "image_path": "../langs/php.png",
+            "about": "PHP Hypertext Preprocessor. I used it for a couple of projects back in my highschool days before nice reactive javascript frameworks were a thing, but haven't touched it since. I'd say I'm a novice with it due to it being over a decade since I've written anything with it.",
+            "frameworks": []
+        },
+        {
+            "id": 12,
+            "name": "TeX",
+            "proficiency": 65,
+            "expand": false,
+            "image_path": "../langs/tex.png",
+            "about": "I fell in love with TeX in my university days, writing papers for discrete math and cryptography courses. I don't get to use it much in my current position, but I've snuck some in when I needed to create internal documentation for the team I worked on.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "LaTeX",
+                    "expand": false,
+                    "image_path": "../frameworks/latex.png",
+                    "about": "TEST", 
+                    "url": "https://www.latex-project.org"
+                },
+                {
+                    "id": 1,
+                    "name": "BibTeX",
+                    "expand": false,
+                    "image_path": "../frameworks/bibtex.png",
+                    "about": "TEST", 
+                    "url": "https://www.bibtex.org"
+                }
+            ]
+        }
+    ],
+    "Projects": [
+        {
+            "id": 0,
+            "title": "Kairo Mixes",
+            "expand": false,
+            "about": "A single page web app, for hosting my Drum and Bass mixes. I built this for two reasons: One is that Soundcloud has an upload timelimit and Mixcloud trashes the quality, and it would be nice to have a website where I can listen to them anywhere. The other reason is that I wanted to get better using the SvelteKit web stack, so this helped me learn a lot about the technologies that I was quickly falling in love with. I believe I accomplished both my goals with this and I'm proud of the finished product.",
+            "icon": "../projects/kairo_mixes.png",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/KairoMixes",
+            "technologies": []
+        },
+        {
+            "id": 1,
+            "title": "Doxxus Portfolio",
+            "expand": false,
+            "about": "You're looking at this project right now. I started it because I wanted to get better at full stack web development, and I wanted a cool portfolio website that I could send to prospective employers, it was a win-win.",
+            "icon": "../projects/doxxus.jpg",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/doxxus-portfolio",
+            "technologies": []
+        },
+        {
+            "id": 2,
+            "title": "Centralized Analysis System",
+            "expand": false,
+            "about": "I was one of the lead developers, designing and implementing a centralized analysis system for use in the whole Abbott Point of Care organization. This tool spanned multiple technologies and architectures and allowed me to explore and implement: database design (Transact SQL), CRUD tool creation, server deployment, web service implementation (SOAP), and much more.",
+            "icon": "../projects/cen_at.png",
+            "github_link": "",
+            "dark_text": false,
+            "technologies": []
+        },
+        {
+            "id": 3,
+            "title": "Encounter Tracker",
+            "expand": false,
+            "about": "A small single page web app I developed with the intention of making it easier to run enouncters in my Dungeons and Dragons campaign when there are many NPCs to keep track of.",
+            "icon": "../projects/encounter_tracker.png",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/EncounterTracker",
+            "technologies": []
+        },
+        {
+            "id": 4,
+            "title": "Sailor Bot",
+            "expand": false,
+            "about": "A funny little Discord bot that posts memes in Discord servers to remind you of the joys of capitalism. It was a joke amongst my friends but I learnt a bit about TypeScript along the way.",
+            "icon": "../projects/sailor_bot.jpg",
+            "dark_text": true,
+            "github_link": "https://github.com/Doxxus/SailorBot",
+            "technologies": []
+        },
+        {
+            "id": 5,
+            "title": "Dice Roller",
+            "expand": false,
+            "about": "A small little Python based GUI that rolls dice that I made in an afternoon for use in my Dungeons and Dragons campaigns.",
+            "icon": "../projects/dice_roller.png",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/dice_roller",
+            "technologies": []
+        },
+        {
+            "id": 6,
+            "title": "Android Multi Dice Roller",
+            "expand": false,
+            "about": "Another dice rolling android app I made in Java because one of my friends was playing a necromancer in one of our Dungeons & Dragons campaigns and needed to roll a lot of dice for all of his summoned minions, so I whipped this app together in an evening. It isn't pretty, but it works.",
+            "icon": "../projects/android_dr.png",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/android_multi_dice_roller",
+            "technologies": []
+        },
+        {
+            "id": 7,
+            "title": "Client - Server App",
+            "expand": false,
+            "about": "A small client-server proof of concept written in C# in Visual Studio 2019, I had been asked to develop as part of a take-home interview coding problem. I think it does a good job at demonstrating my ability to write DRY and SOLID codebases so I'm keeping it in here.",
+            "icon": "../projects/client_server_app.png",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/Client-Server-App",
+            "technologies": []
+        }
+    ]
+}
