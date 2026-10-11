@@ -763,7 +763,7 @@
                     "url": "https://ggplot2.tidyverse.org"
                 },
                 {
-                    "id": 2,
+                    "id": 3,
                     "name": "dplyr",
                     "expand": false,
                     "image_path": "../frameworks/dplyr.png",
@@ -771,7 +771,7 @@
                     "url": "https://dplyr.tidyverse.org"
                 },
                 {
-                    "id": 2,
+                    "id": 4,
                     "name": "officer",
                     "expand": false,
                     "image_path": "../frameworks/officer.png",
@@ -779,7 +779,7 @@
                     "url": "https://davidgohel.github.io/officer/"
                 },
                 {
-                    "id": 100,
+                    "id": 5,
                     "name": "tidyverse",
                     "expand": false,
                     "about": "TEST",

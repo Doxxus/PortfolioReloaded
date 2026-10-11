@@ -32,7 +32,13 @@ export function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/60 bg-gray-50/70 backdrop-blur-md dark:border-gray-800/60 dark:bg-gray-950/70">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <a href="#top" className="flex shrink-0 items-center gap-2 font-semibold">
-          <Image src="/dox_icon.png" alt="" width={36} height={36} className="size-8 object-contain" />
+          <span className="relative inline-block size-8 shrink-0 overflow-hidden rounded-xl">
+            <Image src="/dox_icon.png" alt="" width={36} height={36} className="size-8 object-contain brightness-[2.5] dark:brightness-150 dark:contrast-125" />
+            <span
+              aria-hidden
+              className="absolute inset-0 bg-gradient-to-br from-violet-300 to-cyan-200 dark:from-violet-500 dark:to-cyan-400 mix-blend-color [mask-image:url(/dox_icon.png)] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
+            />
+          </span>
           <span className="text-gradient">{siteConfig.name}</span>
         </a>
         <ul className="flex items-center gap-1 text-sm">
