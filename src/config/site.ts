@@ -16,7 +16,7 @@ export const siteConfig = {
 
 export const sections = [
   { id: "projects", label: "Projects" },
-  { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
   { id: "links", label: "Links" },
 ] as const;

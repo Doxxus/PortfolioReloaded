@@ -1,6 +1,34 @@
 {
-    "about_interest": "I'm currently interested in learning the SvelteKit framework and associated TypeScript web stack.",
+    "about_interest": "Agentic development and its applications in modern software systems.",
     "about_text": "Hi, my name is Lachlan, I have a bachelor's degree in Computer Science and am an avid lover of technology. In my current position, I work primarily with an interesting technology stack comprised of a C# / WPF / Prism front end, a server deployed R backend, and T-SQL databases. I'm currently really interested in doing full stack web development, so I've been using some of my free time to get better at it. When I'm not working, I enjoy tabletop and online gaming with friends, as well as mixing drum and bass music.",
+
+    "highlights": [
+        {
+            "id": "desktop",
+            "title": "Desktop Software",
+            "description": "Data-driven Windows applications built with C#, WPF, and Prism."
+        },
+        {
+            "id": "fullstack",
+            "title": "Full Stack",
+            "description": "End-to-end web apps with a TypeScript stack, from UI to API to database."
+        },
+        {
+            "id": "agentic",
+            "title": "Agentic Development",
+            "description": "Building software in collaboration with AI coding agents and automated workflows."
+        },
+        {
+            "id": "cicd",
+            "title": "CI/CD",
+            "description": "Automated build, test, and deployment pipelines for reliable releases."
+        },
+        {
+            "id": "data",
+            "title": "Data Architecture",
+            "description": "Relational database design and T-SQL backends for production systems."
+        }
+    ],
 
     "experiences": [
         {
@@ -326,7 +354,7 @@
         {
             "id": 0,
             "name": "Javascript",
-            "proficiency": 65,
+            "proficiency": 75,
             "expand": false,
             "image_path": "../langs/js.png",
             "about": "I started programming in Javascript back in my highschool days, using primarily vanilla JS/JQuery, PHP, and HTML/CSS, no frameworks just good ol' JS. I'd say I'm fairly comfortable with this stack. I've since tried my hand at several frameworks and am currently in love with Svelte, but I mainly write it using typescript.",
@@ -454,6 +482,31 @@
                     "expand": false,
                     "image_path": "../frameworks/es_lint.png",
                     "about": "TEST", "url": "https://eslint.org"
+                },
+                {
+                    "id": 6,
+                    "name": "Next.js",
+                    "about": "TEST", "url": "https://nextjs.org"
+                },
+                {
+                    "id": 7,
+                    "name": "tRPC",
+                    "about": "TEST", "url": "https://trpc.io"
+                },
+                {
+                    "id": 8,
+                    "name": "Tailwind",
+                    "about": "TEST", "url": "https://tailwindcss.com"
+                },
+                {
+                    "id": 9,
+                    "name": "Prisma",
+                    "about": "TEST", "url": "https://www.prisma.io"
+                },
+                {
+                    "id": 10,
+                    "name": "NextAuth.js",
+                    "about": "TEST", "url": "https://next-auth.js.org"
                 }
             ]
         },
@@ -511,7 +564,7 @@
         {
             "id": 4,
             "name": "SQL",
-            "proficiency": 90,
+            "proficiency": 95,
             "expand": false,
             "image_path": "../langs/sql.png",
             "about": "I am much more proficient with SQL (specifically Transact SQL) than I was a couple years ago. I've had great mentorship on how to write maintainable, production ready queries, views, and stored procedures. I have had the pleasure of helping architect several databases from the ground up, and it has given me a lot of confidence with the language and databasing as a whole.",
@@ -530,6 +583,13 @@
                     "image_path": "../frameworks/azure_sql.png",
                     "about": "TEST", 
                     "url": "https://azure.microsoft.com/en-ca/products/azure-sql/"
+                },
+                {
+                    "id": 100,
+                    "name": "Microsoft Fabric",
+                    "expand": false,
+                    "about": "TEST",
+                    "url": "https://www.microsoft.com/en-ca/microsoft-fabric"
                 }
             ]
         },   
@@ -612,6 +672,12 @@
                     "image_path": "../frameworks/qt.png",
                     "about": "TEST", 
                     "url": "https://www.qt.io/product/framework"
+                },
+                {
+                    "id": 1,
+                    "name": "Borland C++",
+                    "about": "TEST",
+                    "url": "https://en.wikipedia.org/wiki/Borland_C%2B%2B"
                 }
             ]
         },
@@ -622,7 +688,14 @@
             "expand": false,
             "image_path": "../langs/c.png",
             "about": "C was the first real programming language I learned, and I've had to use it a fair amount for my previous position programming embeded software. In my current position I don't get to program in C much, but I still have to look at C codebases quite a bit. It will always have a soft spot in my heart.",
-            "frameworks": []
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "IAR Compiler",
+                    "about": "TEST",
+                    "url": "https://www.iar.com/embedded-development-tools/iar-embedded-workbench"
+                }
+            ]
         }, 
         {
             "id": 8,
@@ -660,7 +733,7 @@
         {
             "id": 9,
             "name": "R",
-            "proficiency": 85,
+            "proficiency": 95,
             "expand": false,
             "image_path": "../langs/r.png",
             "about": "I began using R for my previous job and then fell in love with R shiny. Currently I mainly use R as the backend of one of the data driven applications I work on. It's a powerful tool for data manipulation and analysis, it also has great tools for report generation.",
@@ -704,6 +777,13 @@
                     "image_path": "../frameworks/officer.png",
                     "about": "TEST", 
                     "url": "https://davidgohel.github.io/officer/"
+                },
+                {
+                    "id": 100,
+                    "name": "tidyverse",
+                    "expand": false,
+                    "about": "TEST",
+                    "url": "https://www.tidyverse.org"
                 }
             ]
         },
@@ -767,6 +847,32 @@
                     "url": "https://www.bibtex.org"
                 }
             ]
+        },
+        {
+            "id": 13,
+            "name": "Scripting",
+            "proficiency": 60,
+            "about": "Automation and data-processing scripts across several shells and languages.",
+            "frameworks": [
+                {
+                    "id": 0,
+                    "name": "PowerShell",
+                    "about": "TEST",
+                    "url": "https://learn.microsoft.com/en-us/powershell/"
+                },
+                {
+                    "id": 1,
+                    "name": "Bash",
+                    "about": "TEST",
+                    "url": "https://www.gnu.org/software/bash/"
+                },
+                {
+                    "id": 2,
+                    "name": "JSL (JMP Scripting)",
+                    "about": "TEST",
+                    "url": "https://www.jmp.com/en/software/capabilities/jsl"
+                }
+            ]
         }
     ],
     "Projects": [
@@ -782,12 +888,12 @@
         },
         {
             "id": 1,
-            "title": "Doxxus Portfolio",
+            "title": "PortfolioReloaded",
             "expand": false,
-            "about": "You're looking at this project right now. I started it because I wanted to get better at full stack web development, and I wanted a cool portfolio website that I could send to prospective employers, it was a win-win.",
-            "icon": "../projects/doxxus.jpg",
+            "about": "The site you're looking at: a single-page portfolio and interactive resume built with the T3 stack (Next.js, TypeScript, Tailwind CSS, and tRPC) and deployed on Vercel. Projects are pulled live from the GitHub API and merged with curated descriptions, all content is driven by a validated JSON data file, and the page features scroll-driven animations, dark and light themes, and a responsive layout tuned for desktop and mobile.",
+            "icon": "",
             "dark_text": false,
-            "github_link": "https://github.com/Doxxus/doxxus-portfolio",
+            "github_link": "https://github.com/Doxxus/PortfolioReloaded",
             "technologies": []
         },
         {
@@ -848,6 +954,16 @@
             "icon": "../projects/client_server_app.png",
             "dark_text": false,
             "github_link": "https://github.com/Doxxus/Client-Server-App",
+            "technologies": []
+        },
+        {
+            "id": 8,
+            "title": "Doxxus Portfolio",
+            "expand": false,
+            "about": "My original portfolio site, built with SvelteKit as a way to get better at full stack web development. It has since been succeeded by PortfolioReloaded, but it's kept here as a record of where the project started.",
+            "icon": "../projects/doxxus.jpg",
+            "dark_text": false,
+            "github_link": "https://github.com/Doxxus/doxxus-portfolio",
             "technologies": []
         }
     ]

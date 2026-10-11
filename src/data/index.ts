@@ -12,6 +12,9 @@ const slice = z.object({
 const infoSchema = z.object({
   about_text: z.string(),
   about_interest: z.string(),
+  highlights: z.array(
+    z.object({ id: z.string(), title: z.string(), description: z.string() }),
+  ),
   experiences: z.array(
     z.object({
       id: z.number(),
@@ -82,6 +85,10 @@ const toSlices = (
   }));
 
 export const about = { text: info.about_text, interest: info.about_interest };
+
+export type Highlight = { id: string; title: string; description: string };
+
+export const highlights: Highlight[] = info.highlights;
 
 export const experiences: Experience[] = info.experiences.map((e) => ({
   id: e.id,

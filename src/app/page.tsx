@@ -38,8 +38,8 @@ export default async function Home() {
       <main>
         <Hero />
         <Projects projects={projects} />
-        <Skills />
         <Experience />
+        <Skills />
         <Links />
       </main>
     </>
