@@ -1,6 +1,7 @@
 import { siteConfig } from "~/config/site";
 
 import { Reveal } from "./reveal";
+import { ResumeLink } from "./resume-modal";
 import { SectionHeading } from "./section-heading";
 
 const iconCls = "size-7";
@@ -28,8 +29,9 @@ const items = [
   },
   {
     label: "Resume",
-    hint: siteConfig.links.resume ? "View / download PDF" : "Coming soon",
-    href: siteConfig.links.resume,
+    hint: "View my resume",
+    href: undefined as string | undefined,
+    modal: true,
     icon: (
       <svg
         className={iconCls}
@@ -76,7 +78,13 @@ export function Links() {
           );
           return (
             <Reveal key={it.label} delay={i * 0.1}>
-              {it.href ? (
+              {"modal" in it ? (
+                <ResumeLink
+                  className={`${cls} hover:-translate-y-1 hover:border-cyan-400/60 hover:shadow-lg hover:shadow-cyan-500/10`}
+                >
+                  {body}
+                </ResumeLink>
+              ) : it.href ? (
                 <a
                   href={it.href}
                   target="_blank"
