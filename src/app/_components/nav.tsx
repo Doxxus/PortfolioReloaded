@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useSpring } from "motion/react";
+import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -30,7 +31,8 @@ export function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/60 bg-gray-50/70 backdrop-blur-md dark:border-gray-800/60 dark:bg-gray-950/70">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
-        <a href="#top" className="hidden font-semibold sm:block">
+        <a href="#top" className="flex shrink-0 items-center gap-2 font-semibold">
+          <Image src="/dox_icon.png" alt="" width={36} height={36} className="size-8 object-contain" />
           <span className="text-gradient">{siteConfig.name}</span>
         </a>
         <ul className="flex items-center gap-1 text-sm">
