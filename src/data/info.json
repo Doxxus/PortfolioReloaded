@@ -1,6 +1,6 @@
 {
     "about_interest": "Agentic development and its applications in modern software systems.",
-    "about_text": "Hi, my name is Lachlan, I have a bachelor's degree in Computer Science and am an avid lover of technology. In my current position, I work primarily with an interesting technology stack comprised of a C# / WPF / Prism front end, a server deployed R backend, and T-SQL databases. I'm currently really interested in doing full stack web development, so I've been using some of my free time to get better at it. When I'm not working, I enjoy tabletop and online gaming with friends, as well as mixing drum and bass music.",
+    "about_text": "I'm Lachlan, a Computer Science graduate with a strong interest in technology and software development. In my current role, I work primarily with a technology stack that includes a C# / WPF / Prism front end, an R backend deployed on a server, and T-SQL databases and Microsoft Fabric datalakes. I'm building my skills in full-stack web development through ongoing learning and practice. Outside of work, I enjoy tabletop and online gaming with friends, as well as mixing drum and bass music.",
 
     "highlights": [
         {
@@ -553,15 +553,6 @@
             ]
         },
         {
-            "id": 3,
-            "name": "HTML",
-            "proficiency": 70,
-            "expand": false,
-            "image_path": "../langs/html5.png",
-            "about": "80% of my time developing web apps is spent playing around with the CSS, moreso now that I've picked up tailwind, which streamlines the whole process and makes things much nicer to do. Love me some good styles and good formatting.",
-            "frameworks": []
-        },
-        {
             "id": 4,
             "name": "SQL",
             "proficiency": 95,
@@ -590,6 +581,13 @@
                     "expand": false,
                     "about": "TEST",
                     "url": "https://www.microsoft.com/en-ca/microsoft-fabric"
+                },
+                {
+                    "id": 101,
+                    "name": "Spark SQL",
+                    "expand": false,
+                    "about": "TEST",
+                    "url": "https://spark.apache.org/docs/latest/sql-ref.html"
                 }
             ]
         },   
@@ -700,7 +698,7 @@
         {
             "id": 8,
             "name": "Python",
-            "proficiency": 73,
+            "proficiency": 70,
             "expand": false,
             "image_path": "../langs/python.png",
             "about": "Python is my go-to language whenever I want to script something out quickly with not much planning / boilerplate overhead. That and machine learning, who could have guessed. I'm an decently proficient with Python and it's various essential API's.",
@@ -727,6 +725,13 @@
                     "image_path": "../frameworks/pandas.png",
                     "about": "TEST", 
                     "url": "https://pandas.pydata.org"
+                },
+                {
+                    "id": 3,
+                    "name": "PySpark",
+                    "expand": false,
+                    "about": "TEST",
+                    "url": "https://spark.apache.org/docs/latest/api/python/index.html"
                 }
             ]
         },
@@ -784,6 +789,13 @@
                     "expand": false,
                     "about": "TEST",
                     "url": "https://www.tidyverse.org"
+                },
+                {
+                    "id": 6,
+                    "name": "SparkR",
+                    "expand": false,
+                    "about": "TEST",
+                    "url": "https://spark.apache.org/docs/latest/sparkr.html"
                 }
             ]
         },
@@ -813,15 +825,6 @@
                 }
             ]
         }, 
-        {
-            "id": 11,
-            "name": "PHP",
-            "proficiency": 40,
-            "expand": false,
-            "image_path": "../langs/php.png",
-            "about": "PHP Hypertext Preprocessor. I used it for a couple of projects back in my highschool days before nice reactive javascript frameworks were a thing, but haven't touched it since. I'd say I'm a novice with it due to it being over a decade since I've written anything with it.",
-            "frameworks": []
-        },
         {
             "id": 12,
             "name": "TeX",
