@@ -71,7 +71,7 @@ html.lenis body {
 
 .glow {
   --glow-lo: 0.5;
-  --glow-hi: 0.9;
+  --glow-hi: 0.8;
   animation:
     drift 22s ease-in-out infinite,
     breathe 7s ease-in-out infinite;
@@ -80,7 +80,7 @@ html.lenis body {
 
 .dark .glow {
   --glow-lo: 0.32;
-  --glow-hi: 0.9;
+  --glow-hi: 0.7;
 }
 
 .glow-alt {

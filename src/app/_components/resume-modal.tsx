@@ -76,9 +76,11 @@ const iconCls = "size-6";
 export function ResumeLink({
   className,
   children,
+  onPointerMove,
 }: {
   className: string;
   children: React.ReactNode;
+  onPointerMove?: React.PointerEventHandler<HTMLButtonElement>;
 }) {
   const [open, setOpen] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -105,6 +107,7 @@ export function ResumeLink({
         ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
+        onPointerMove={onPointerMove}
         aria-haspopup="dialog"
         className={`${className} w-full cursor-pointer text-left`}
       >

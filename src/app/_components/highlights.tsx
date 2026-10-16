@@ -1,5 +1,8 @@
+"use client";
+
 import { highlights } from "~/data";
 
+import { MouseHalo, onMouseHaloMove } from "./mouse-halo";
 import { Reveal } from "./reveal";
 
 const svg = {
@@ -51,14 +54,20 @@ export function Highlights() {
       {highlights.map((h, i) => (
         <li key={h.id}>
           <Reveal delay={i * 0.07} className="h-full">
-            <div className="card h-full p-4 transition-colors duration-300 hover:border-cyan-400/60">
-              <span className="mb-3 inline-flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/15 to-cyan-400/15 text-violet-600 dark:text-cyan-300">
-                {icons[h.id]}
-              </span>
-              <h3 className="font-semibold">{h.title}</h3>
-              <p className="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                {h.description}
-              </p>
+            <div
+              onPointerMove={onMouseHaloMove}
+              className="card group relative h-full overflow-hidden p-4 transition-colors duration-300 hover:border-cyan-400/60"
+            >
+              <MouseHalo />
+              <div className="relative">
+                <span className="mb-3 inline-flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/15 to-cyan-400/15 text-violet-600 dark:text-cyan-300">
+                  {icons[h.id]}
+                </span>
+                <h3 className="font-semibold">{h.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                  {h.description}
+                </p>
+              </div>
             </div>
           </Reveal>
         </li>

@@ -1,5 +1,8 @@
+"use client";
+
 import { siteConfig } from "~/config/site";
 
+import { MouseHalo, onMouseHaloMove } from "./mouse-halo";
 import { Reveal } from "./reveal";
 import { ResumeLink } from "./resume-modal";
 import { SectionHeading } from "./section-heading";
@@ -64,14 +67,15 @@ export function Links() {
       <div className="grid gap-5 sm:grid-cols-3">
         {items.map((it, i) => {
           const cls =
-            "card group flex flex-col items-start gap-3 p-6 transition-all duration-300";
+            "card group relative flex flex-col items-start gap-3 overflow-hidden p-6 transition-all duration-300";
           const body = (
             <>
-              <span className="text-violet-600 transition-transform duration-300 group-hover:scale-110 dark:text-violet-300">
+              <MouseHalo />
+              <span className="relative text-violet-600 transition-transform duration-300 group-hover:scale-110 dark:text-violet-300">
                 {it.icon}
               </span>
-              <span className="text-lg font-semibold">{it.label}</span>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
+              <span className="relative text-lg font-semibold">{it.label}</span>
+              <span className="relative text-sm text-gray-500 dark:text-gray-400">
                 {it.hint}
               </span>
             </>
@@ -81,6 +85,7 @@ export function Links() {
               {"modal" in it ? (
                 <ResumeLink
                   className={`${cls} hover:-translate-y-1 hover:border-cyan-400/60 hover:shadow-lg hover:shadow-cyan-500/10`}
+                  onPointerMove={onMouseHaloMove}
                 >
                   {body}
                 </ResumeLink>
@@ -89,12 +94,17 @@ export function Links() {
                   href={it.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onPointerMove={onMouseHaloMove}
                   className={`${cls} hover:-translate-y-1 hover:border-cyan-400/60 hover:shadow-lg hover:shadow-cyan-500/10`}
                 >
                   {body}
                 </a>
               ) : (
-                <div className={`${cls} opacity-60`} aria-disabled>
+                <div
+                  onPointerMove={onMouseHaloMove}
+                  className={`${cls} opacity-60`}
+                  aria-disabled
+                >
                   {body}
                 </div>
               )}

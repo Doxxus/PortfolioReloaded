@@ -1,9 +1,8 @@
 "use client";
 
-import { useRef } from "react";
-
 import type { Project } from "~/server/github";
 
+import { MouseHalo, onMouseHaloMove } from "./mouse-halo";
 import { TechIcon } from "./tech-icon";
 
 const gradients = [
@@ -29,16 +28,6 @@ function initials(title: string) {
 }
 
 export function ProjectCard({ project }: { project: Project }) {
-  const ref = useRef<HTMLAnchorElement & HTMLDivElement>(null);
-
-  const onMove = (e: React.PointerEvent) => {
-    const el = ref.current;
-    if (!el || e.pointerType !== "mouse") return;
-    const r = el.getBoundingClientRect();
-    el.style.setProperty("--x", `${e.clientX - r.left}px`);
-    el.style.setProperty("--y", `${e.clientY - r.top}px`);
-  };
-
   const className =
     "card group relative flex h-full flex-col overflow-hidden p-5 transition-all duration-300 " +
     (project.url
@@ -47,59 +36,53 @@ export function ProjectCard({ project }: { project: Project }) {
 
   const content = (
     <>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background:
-            "radial-gradient(240px circle at var(--x,50%) var(--y,50%), rgba(139,92,246,0.14), transparent 70%)",
-        }}
-      />
-      <div className="relative flex items-center gap-3">
-        <div
-          className={`flex size-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br text-lg font-bold text-white ${
-            gradients[hash(project.title) % gradients.length]!
-          }`}
-        >
-          {initials(project.title)}
+      <MouseHalo />
+      <div className="relative flex h-full flex-col">
+        <div className="flex items-center gap-3">
+          <div
+            className={`flex size-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br text-lg font-bold text-white ${
+              gradients[hash(project.title) % gradients.length]!
+            }`}
+          >
+            {initials(project.title)}
+          </div>
+          <h3 className="text-lg leading-tight font-semibold">{project.title}</h3>
         </div>
-        <h3 className="text-lg leading-tight font-semibold">{project.title}</h3>
-      </div>
-      <p className="relative mt-4 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-        {project.about}
-      </p>
-      <div className="relative mt-4 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-        <span className="flex items-center gap-2">
-          {project.language && (
-            <>
-              <TechIcon name={project.language} size={14} />
-              {project.language}
-            </>
-          )}
-        </span>
-        <span className="flex items-center gap-3">
-          {project.stars ? <span>★ {project.stars}</span> : null}
-          <span className="text-violet-600 dark:text-violet-300">
-            {project.url ? "View on GitHub →" : "Private / work project"}
+        <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          {project.about}
+        </p>
+        <div className="mt-4 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+          <span className="flex items-center gap-2">
+            {project.language && (
+              <>
+                <TechIcon name={project.language} size={14} />
+                {project.language}
+              </>
+            )}
           </span>
-        </span>
+          <span className="flex items-center gap-3">
+            {project.stars ? <span>★ {project.stars}</span> : null}
+            <span className="text-violet-600 dark:text-violet-300">
+              {project.url ? "View on GitHub →" : "Private / work project"}
+            </span>
+          </span>
+        </div>
       </div>
     </>
   );
 
   return project.url ? (
     <a
-      ref={ref}
       href={project.url}
       target="_blank"
       rel="noopener noreferrer"
-      onPointerMove={onMove}
+      onPointerMove={onMouseHaloMove}
       className={className}
     >
       {content}
     </a>
   ) : (
-    <div ref={ref} className={className}>
+    <div onPointerMove={onMouseHaloMove} className={className}>
       {content}
     </div>
   );

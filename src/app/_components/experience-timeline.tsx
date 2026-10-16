@@ -5,6 +5,7 @@ import { useRef } from "react";
 
 import type { Experience } from "~/data";
 
+import { MouseHalo, onMouseHaloMove } from "./mouse-halo";
 import { StackedBar } from "./stacked-bar";
 
 export function ExperienceTimeline({ items }: { items: Experience[] }) {
@@ -41,20 +42,26 @@ export function ExperienceTimeline({ items }: { items: Experience[] }) {
             )}
             <span className="relative size-3 rounded-full border-2 border-violet-500 bg-gray-50 sm:size-4 dark:bg-gray-950" />
           </span>
-          <div className="card p-5 sm:p-6">
-            <div className="flex flex-wrap items-baseline justify-between gap-x-4">
-              <h3 className="text-xl font-semibold">{e.position}</h3>
-              <span className="font-mono text-xs text-cyan-600 dark:text-cyan-300">
-                {e.start} – {e.end ?? "Present"}
-              </span>
-            </div>
-            <p className="text-violet-600 dark:text-violet-300">{e.company}</p>
-            <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-              {e.about}
-            </p>
-            <div className="mt-5 grid gap-5 lg:grid-cols-2">
-              <StackedBar title="Time spent" items={e.duties} />
-              <StackedBar title="Technologies" items={e.technologies} />
+          <div
+            onPointerMove={onMouseHaloMove}
+            className="card group relative overflow-hidden p-5 sm:p-6"
+          >
+            <MouseHalo />
+            <div className="relative">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                <h3 className="text-xl font-semibold">{e.position}</h3>
+                <span className="font-mono text-xs text-cyan-600 dark:text-cyan-300">
+                  {e.start} – {e.end ?? "Present"}
+                </span>
+              </div>
+              <p className="text-violet-600 dark:text-violet-300">{e.company}</p>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                {e.about}
+              </p>
+              <div className="mt-5 grid gap-5 lg:grid-cols-2">
+                <StackedBar title="Time spent" items={e.duties} />
+                <StackedBar title="Technologies" items={e.technologies} />
+              </div>
             </div>
           </div>
         </motion.li>
