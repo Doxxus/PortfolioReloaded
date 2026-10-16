@@ -57,13 +57,148 @@ html.lenis body {
   }
 }
 
+@keyframes breathe {
+  0%,
+  100% {
+    scale: 0.92;
+    opacity: var(--glow-lo);
+  }
+  50% {
+    scale: 1.12;
+    opacity: var(--glow-hi);
+  }
+}
+
 .glow {
-  animation: drift 22s ease-in-out infinite;
-  will-change: transform;
+  --glow-lo: 0.5;
+  --glow-hi: 0.9;
+  animation:
+    drift 22s ease-in-out infinite,
+    breathe 7s ease-in-out infinite;
+  will-change: transform, scale, opacity;
+}
+
+.dark .glow {
+  --glow-lo: 0.32;
+  --glow-hi: 0.9;
+}
+
+.glow-alt {
+  animation-delay: -11s, -3.5s;
+}
+
+@keyframes name-draw {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes name-fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+.hero-name text {
+  fill: url(#hero-name-gradient);
+  fill-opacity: 0;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation:
+    name-draw 1.2s ease-in-out 0.1s forwards,
+    name-fill 0.3s ease-out 1.1s forwards;
+}
+
+.theme-icon {
+  transform: rotate(-40deg);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-icon-body,
+.theme-icon-cut,
+.theme-icon-rays {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.theme-icon-body {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-icon-cut {
+  transition:
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-icon-rays {
+  opacity: 0;
+  transform: scale(0.4) rotate(-45deg);
+  transition:
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease;
+}
+
+.dark .theme-icon {
+  transform: rotate(0deg);
+}
+
+.dark .theme-icon-body {
+  transform: scale(0.45);
+}
+
+.dark .theme-icon-cut {
+  transform: translate(14px, -14px);
+}
+
+.dark .theme-icon-rays {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-icon,
+  .theme-icon-body,
+  .theme-icon-cut,
+  .theme-icon-rays {
+    transition: none;
+  }
+}
+
+.resume-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(167 139 250 / 0.5) transparent;
+}
+
+.resume-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.resume-scroll::-webkit-scrollbar-thumb {
+  background: rgb(167 139 250 / 0.45);
+  border-radius: 9999px;
+}
+
+.resume-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(139 92 246 / 0.75);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .glow {
     animation: none;
+  }
+  .hero-name text {
+    animation: none;
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
   }
 }

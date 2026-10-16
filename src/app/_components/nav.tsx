@@ -64,26 +64,30 @@ export function Nav() {
           className="rounded-full p-2 text-gray-600 hover:bg-gray-200/70 dark:text-gray-300 dark:hover:bg-gray-800"
         >
           <svg
-            className="hidden size-5 dark:block"
+            className="theme-icon size-5"
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
+            fill="currentColor"
+            aria-hidden="true"
           >
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
-          </svg>
-          <svg
-            className="size-5 dark:hidden"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            <mask id="theme-icon-mask">
+              <rect width="24" height="24" fill="white" />
+              <circle className="theme-icon-cut" cx="18" cy="6" r="6" fill="black" />
+            </mask>
+            <circle
+              className="theme-icon-body"
+              cx="12"
+              cy="12"
+              r="9"
+              mask="url(#theme-icon-mask)"
+            />
+            <g
+              className="theme-icon-rays"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </g>
           </svg>
         </button>
       </nav>

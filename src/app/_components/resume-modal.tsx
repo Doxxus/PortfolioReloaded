@@ -169,7 +169,7 @@ export function ResumeLink({
 
                   <div
                     data-lenis-prevent
-                    className="relative min-h-0 flex-1 overflow-y-auto overscroll-contain"
+                    className="resume-scroll relative min-h-0 flex-1 overflow-y-auto overscroll-contain"
                   >
                     <motion.div
                       variants={list}

@@ -27,7 +27,7 @@ export default async function Home() {
           }}
         />
         <div
-          className="glow absolute -right-1/4 -bottom-1/4 size-[80vmax] opacity-60 [animation-delay:-11s] dark:opacity-40"
+          className="glow glow-alt absolute -right-1/4 -bottom-1/4 size-[80vmax] opacity-60 dark:opacity-40"
           style={{
             background:
               "radial-gradient(circle, rgba(6,182,212,0.22), transparent 65%)",
