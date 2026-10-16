@@ -6,10 +6,9 @@ Live at [folio.doxxus.ca](https://folio.doxxus.ca).
 
 ## Highlights
 
-- Smooth, scroll-driven animations across Projects, Skills, Experience, and Links sections
-- Projects pulled live from GitHub, enriched with curated descriptions
-- Dark and light themes with a gray, purple, and cyan palette
-- Responsive and performant on desktop and mobile
+- Smooth, scroll-driven animations across sections (using Motion and Lenis).
+- Projects pulled live from GitHub, enriched with curated descriptions.
+- Now much more responsive and performant on desktop and mobile.
 
 ## Built With
 
