@@ -46,6 +46,13 @@ const slugs: Record<string, string> = {
   plotly: "plotly",
 };
 
+const darkSlugs = new Set(["express", "nextjs", "vercel", "threejs", "bash", "pandas", "latex"]);
+
+export function isDarkIcon(name: string): boolean {
+  const slug = slugs[name.toLowerCase()];
+  return !!slug && darkSlugs.has(slug);
+}
+
 export function iconUrl(name: string): string | null {
   const slug = slugs[name.toLowerCase()];
   return slug

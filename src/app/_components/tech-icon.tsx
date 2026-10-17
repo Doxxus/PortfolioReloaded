@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { iconUrl } from "~/lib/icons";
+import { iconUrl, isDarkIcon } from "~/lib/icons";
 
 export function TechIcon({ name, size = 24 }: { name: string; size?: number }) {
   const url = iconUrl(name);
@@ -10,7 +10,7 @@ export function TechIcon({ name, size = 24 }: { name: string; size?: number }) {
 
   return (
     <span
-      className="inline-flex shrink-0 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-gray-200 dark:ring-gray-700"
+      className="inline-flex shrink-0 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-gray-200 dark:bg-gray-800/60 dark:shadow-none dark:ring-gray-700"
       style={{ width: size + 12, height: size + 12 }}
     >
       {failed || !url ? (
@@ -25,6 +25,7 @@ export function TechIcon({ name, size = 24 }: { name: string; size?: number }) {
           width={size}
           height={size}
           loading="lazy"
+          className={isDarkIcon(name) ? "dark:invert" : undefined}
           onError={() => setFailed(true)}
         />
       )}

@@ -110,6 +110,9 @@ html.lenis body {
   fill-opacity: 0;
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
+}
+
+.hero-name.is-ready text {
   animation:
     name-draw 1.2s ease-in-out 0.1s forwards,
     name-fill 0.3s ease-out 1.1s forwards;
@@ -196,8 +199,8 @@ html.lenis body {
   .glow {
     animation: none;
   }
-  .hero-name text {
-    animation: none;
+  .hero-name text,
+  .hero-name.is-ready text {
     fill-opacity: 1;
     stroke-dashoffset: 0;
   }
