@@ -36,7 +36,8 @@ export function Nav() {
             <Image src="/dox_icon.png" alt="" width={36} height={36} className="size-8 object-contain brightness-[2.5] dark:brightness-150 dark:contrast-125" />
             <span
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-br from-violet-300 to-cyan-200 dark:from-violet-500 dark:to-cyan-400 mix-blend-color [mask-image:url(/dox_icon.png)] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
+              className="absolute inset-0 bg-gradient-to-br from-violet-300 to-cyan-200 dark:from-violet-500 dark:to-cyan-400 mix-blend-color [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
+              style={{ maskImage: `url(${siteConfig.basePath}/dox_icon.png)`, WebkitMaskImage: `url(${siteConfig.basePath}/dox_icon.png)` }}
             />
           </span>
           <span className="text-gradient">{siteConfig.name}</span>

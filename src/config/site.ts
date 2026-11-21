@@ -4,7 +4,8 @@ export const siteConfig = {
   name: "Lachlan Campbell",
   // Placeholder – replace with the real tagline.
   tagline: "Software developer · Full-stack tinkerer",
-  url: "https://folio.doxxus.ca",
+  url: "https://doxxus.ca",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
   githubUser: "Doxxus",
   links: {
     github: "https://github.com/Doxxus",
