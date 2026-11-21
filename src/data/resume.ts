@@ -1,10 +1,10 @@
 export const resume = {
   name: "Lachlan Campbell",
   email: "lachlan@doxxus.ca",
-  site: { label: "folio.doxxus.ca", href: "https://folio.doxxus.ca" },
+  site: { label: "doxxus.ca/portfolio", href: "https://doxxus.ca/portfolio" },
   summary: [
     "I am a skilled programmer and a diligent worker. I have worked with a broad array of technologies, languages, and tools, but I believe my biggest skills are the ability to work autonomously, and to solve problems fast, efficiently, and elegantly. I’m always eager to learn new things whether it be programming or process related, and I pick them up fast. Working at Abbott has given me a deeper insight into product engineering, embedded software, full-stack development, data architecting, and has allowed me to learn new technologies, skills, and languages, in addition to familiarizing myself with the regulatory challenges involved in bringing medical devices to market.",
-    "For an interactive look at some of my skills and projects visit folio.doxxus.ca to look at my portfolio.",
+    "For an interactive look at some of my skills and projects visit doxxus.ca/portfolio to look at my portfolio.",
   ],
   experience: [
     {

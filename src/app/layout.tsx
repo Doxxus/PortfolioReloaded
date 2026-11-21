@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: `${siteConfig.name} – Portfolio`,
   description: "Portfolio and interactive resume",
-  icons: [{ rel: "icon", url: "/dox_icon.png", type: "image/png" }],
+  icons: [{ rel: "icon", url: `${siteConfig.basePath}/dox_icon.png`, type: "image/png" }],
 };
 
 export const viewport: Viewport = {

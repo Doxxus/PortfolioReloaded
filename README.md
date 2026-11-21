@@ -2,7 +2,7 @@
 
 A single-page portfolio and interactive resume showcasing my projects, skills, work experience, and links.
 
-Live at [folio.doxxus.ca](https://folio.doxxus.ca).
+Live at [doxxus.ca/portfolio](https://doxxus.ca/portfolio).
 
 ## Highlights
 
