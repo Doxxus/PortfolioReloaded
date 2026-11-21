@@ -33,7 +33,7 @@ export function Nav() {
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <a href="#top" className="flex shrink-0 items-center gap-2 font-semibold">
           <span className="relative inline-block size-8 shrink-0 overflow-hidden rounded-xl">
-            <Image src="/dox_icon.png" alt="" width={36} height={36} className="size-8 object-contain brightness-[2.5] dark:brightness-150 dark:contrast-125" />
+            <Image src={`${siteConfig.basePath}/dox_icon.png`} alt="" width={36} height={36} className="size-8 object-contain brightness-[2.5] dark:brightness-150 dark:contrast-125" />
             <span
               aria-hidden
               className="absolute inset-0 bg-gradient-to-br from-violet-300 to-cyan-200 dark:from-violet-500 dark:to-cyan-400 mix-blend-color [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center]"
